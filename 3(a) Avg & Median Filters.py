@@ -20,7 +20,7 @@ def apply_smoothing_average_filter(image, mask):
             for i in range(-x, x + 1, 1):
                 for j in range(-x, x + 1, 1):
                     if (c + i >= 0 and c + i < height and r + j >= 0 and r + j < width):
-                        pixel += original_image[c + i, r + j] // (mask * mask)
+                        pixel += image[c + i, r + j] // (mask * mask)
             new_row.append(pixel)
         average_image.append(new_row)
     return np.uint8(average_image)
