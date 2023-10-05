@@ -45,7 +45,8 @@ def apply_median_filter(image, mask):
 
 #... Function for calculating Peak Signal to Noise Ratio (PSNR)
 def psnr(image1, image2):
-    height, width = image1.shape
+    image1 = np.array(image1, dtype=np.float64)
+    image2 = np.array(image2, dtype=np.float64)
     mse = np.mean((image1 - image2)**2)
     psnr = 20 * np.log10(255.0) - 10 * np.log10(mse)
     return round(psnr, 2)
@@ -66,16 +67,16 @@ plt.figure(figsize = (13, 7))
 plot_image(original_image, "Original Image", 1)
 
 #... Applying noise
-noisy_image = salt_pepper_noise(original_image, 1000)
-plot_image(noisy_image, "Noisy Image", 2)
+noisy_image = salt_pepper_noise(original_image, 10000)
+plot_image(noisy_image, f"Noisy Image with PSNR = {psnr(original_image, noisy_image)}", 2)
 
 #... Applying Averaging Filter
-average_image = apply_smoothing_average_filter(original_image, 3)
+average_image = apply_smoothing_average_filter(noisy_image, 3)
 avg_psnr = psnr(original_image, average_image)
 plot_image(average_image, f"After applying Smoothing Averaging Filter PSNR = {avg_psnr}", 3)
 
 #... Applying Median Filter
-median_image = apply_median_filter(original_image, 3)
+median_image = apply_median_filter(noisy_image, 3)
 median_psnr = psnr(original_image, median_image)
 plot_image(median_image, f"After applying Median Filter PSNR = {median_psnr}", 4)
 
