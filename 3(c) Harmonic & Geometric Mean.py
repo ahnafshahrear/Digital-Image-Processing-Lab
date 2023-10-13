@@ -69,7 +69,7 @@ plt.figure(figsize = (13, 7))
 plot_image(original_image, "Original Image", 1)
 
 #... Applying noise
-noisy_image = salt_pepper_noise(original_image, 10000)
+noisy_image = salt_pepper_noise(original_image, 1000)
 plot_image(noisy_image, f"Noisy Image with PSNR = {psnr(original_image, noisy_image)}", 2)
 print(psnr(original_image, noisy_image))
 
