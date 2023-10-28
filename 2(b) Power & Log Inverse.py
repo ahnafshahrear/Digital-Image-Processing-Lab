@@ -7,7 +7,7 @@ def plot_image(image, text, subplot):
     plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
     plt.title(text)
 
-original_image = cv2.resize(cv2.imread('Joker.jpg', 0), (512, 512))
+original_image = cv2.imread("./Fig0309(a) Aerial Image 765x769.tif", 0)
 plot_image(original_image, "Original Image", 1)
 
 height, width = original_image.shape
@@ -27,7 +27,11 @@ inverse_log_image = []
 for c in range(height):
     image_row = []
     for r in range(width):
-        pixel = 10 ** ((original_image[c, r] / 255.0) - 1)
+        cx = 105.88
+        pixel = float(original_image[c, r]) / 255.0
+        pixel = np.exp(pixel) ** (1 / cx) - 1;
+    
+        # pixel = 10 ** ((original_image[c, r] / 255.0) - 1)
         image_row.append(pixel * 255)
     inverse_log_image.append(image_row)
 
