@@ -17,6 +17,7 @@ def gaussian(D0,f_img):
     filtered_image=Gaussian*f_img
     
     return filtered_image
+
 def butterworth(D0,n,f_img):
     M, N = f_img.shape
     H = np.zeros((M, N), dtype=np.float32)
@@ -54,6 +55,7 @@ def main():
     #perform inverse fft on butterworth filtered image
     reconstructed_ishifted = np.fft.ifftshift(filtered_butter)
     reconstructed_ishifted_ifft = np.fft.ifft2(reconstructed_ishifted).real
+    reconstructed_ishifted_ifft = np.array(reconstructed_ishifted_ifft,dtype=np.uint8)
     plotimg(reconstructed_ishifted_ifft,3,2,5,"Reconstructed image using Butterworth")
     
     plt.tight_layout()
