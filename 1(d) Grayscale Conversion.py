@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-original_image = cv2.imread("Joker.jpg")
+original_image = cv2.imread("./Joker 1938x1938.jpg")
 original_image = cv2.resize(original_image, (0, 0), fx = 0.2, fy = 0.2)
 
 plt.subplot(1, 2, 1)
