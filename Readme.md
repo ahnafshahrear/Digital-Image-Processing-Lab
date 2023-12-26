@@ -10,7 +10,7 @@
 	- **(c) Illustrate the histogram of the image & make single threshold segmentation observed from the histogram ✓** 
 - **`Task 2:` Take a grayscale image of size 512x512 & perform the following operations –**
 	- **(a) Perform the brightness enhancement of a specific range of gray levels & observe its result**
-	- **(b) Differentiate the results of power law inverse logarithmic transformation**
+	- **(b) Differentiate the results of power law & inverse logarithmic transformation**
 	- **(c) Find the difference image between original & the image obtained by last three MSBs**
 - **`Task 3:` Take a grayscale image of size 512x512, add some salt-and-pepper noise & perform the following operations –**
 	- **(a) Apply average & median spatial filters with 5x5 mask & observe their performance for noise suppression in term of PSNR**
