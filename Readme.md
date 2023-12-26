@@ -21,6 +21,6 @@
 	- **(b) DisplY the ringing effect of the ideal low-pass filter of different radius on the image**
 	- **(c) Perform edge detection of given the noisy & clean image using ideal & Gaussian high-pass filters**
  - **`Task 5:` Take a binary image & perform the following morphological operations –**
-	- **(a) Perform Erosion & Dilation operations**
-	- **(b) Opening & Closing operations**
-	- **(c) Boundary extraction using morphological operation** 
+	- **(a) Perform Erosion & Dilation operations ✓**
+	- **(b) Opening & Closing operations ✓**
+	- **(c) Boundary extraction using morphological operation ✓** 
