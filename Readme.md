@@ -20,7 +20,7 @@
 	- **(a) Apply 4th order Butterworth & Gaussian low pass filter to analyze their performance quantitatively**
 	- **(b) Observe the ringing effect of the ideal low pass filter on the image. Use different radius of ideal low-pass filters & display their results**
 	- **(c) Perform edge detection of given the noisy & clean image using ideal & Gaussian high pass filters**
- - **`Task 5: Morphological Operation` Take a binary image and a structuring element to perform the following morphological operations –**
+ - **`Task 5: Morphological Operation` Take a binary image & perform the following morphological operations –**
 	- **(a) Perform Erosion & Dilation operations**
 	- **(b) Opening & Closing operations**
 	- **(c) Boundary extraction using morphological operation** 
