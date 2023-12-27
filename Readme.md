@@ -17,9 +17,9 @@
 	- **(b) Apply average filter with (3x3, 5x5, 7x7) mask with average filter & observe their performance in term of PSNR ✓**
 	- **(c) Apply harmonic & geometric mean filter on the noisy image & compare their performance with PSNR ✓**
 - **`Task 4:` Take a grayscale image of size 512x512, add some Gaussian noise & perform the following operations in the frequency domain –**
-	- **(a) Apply 4th order Butterworth & Gaussian low-pass filter to analyze their performance quantitatively**
-	- **(b) DisplY the ringing effect of the ideal low-pass filter of different radius on the image**
-	- **(c) Perform edge detection of given the noisy & clean image using ideal & Gaussian high-pass filters**
+	- **(a) Apply 4th order Butterworth & Gaussian low-pass filter to analyze their performance quantitatively ✓**
+	- **(b) Display the ringing effect of the ideal low-pass filter of different radius on the image ✓**
+	- **(c) Perform edge detection of given the noisy & clean image using ideal & Gaussian high-pass filters ✓**
  - **`Task 5:` Take a binary image & perform the following morphological operations –**
 	- **(a) Perform Erosion & Dilation operations ✓**
 	- **(b) Opening & Closing operations ✓**
