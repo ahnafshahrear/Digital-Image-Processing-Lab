@@ -1,7 +1,7 @@
 ## Digital Image Processing Lab
 - **[Ahnaf Shahrear Khan](https://github.com/ahnafshahrear)**
 - **Computer Science & Engineering, University of Rajshahi**
-- **Code:** `CSE4181`
+- **Code: `CSE-4181`**
 
 ### Lab Tasks
 - **Task 1: Take the grayscale image of size 512x512 & perform the following operations -**
